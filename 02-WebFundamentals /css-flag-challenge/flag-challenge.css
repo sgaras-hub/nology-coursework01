@@ -1,0 +1,91 @@
+body {
+  background-color: aliceblue;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* German Flag */
+/* To center a div by defining the width of the parent then appling 'auto' to the margin
+ */
+.german-flag {
+  width: 300px;
+  margin: auto;
+}
+
+.black {
+  background-color: black;
+  width: 300px;
+  height: 60px;
+}
+
+.red {
+  background-color: #c70000;
+  width: 300px;
+  height: 60px;
+}
+
+.yellow {
+  background-color: #ffef14;
+  width: 300px;
+  height: 60px;
+}
+
+/* German Flag change to Hungarian Flag hover */
+.german-flag:hover .black {
+  background-color: rgb(216, 2, 2);
+  transition: 2s;
+}
+.german-flag:hover .red {
+  background-color: white;
+  transition: 2s;
+}
+.german-flag:hover .yellow {
+  background-color: darkgreen;
+  transition: 2s;
+}
+
+/* French Flag */
+.french-flag {
+  width: 300px;
+  margin: auto;
+  margin-top: 10px;
+}
+/* Transition: seems like you can only use the transiotion on the child and not the parent */
+.blue {
+  background-color: #1814ff;
+  width: 100px;
+  height: 200px;
+  transition: 2s;
+}
+
+.white {
+  position: relative;
+  left: 100px;
+  bottom: 200px;
+  background-color: white;
+  width: 100px;
+  height: 200px;
+  transition: 2s;
+}
+
+.french-red {
+  position: relative;
+  left: 200px;
+  bottom: 400px;
+  background-color: red;
+  width: 100px;
+  height: 200px;
+  transition: 2s;
+}
+
+/* French Flag click to Irish Flag */
+
+.french-flag:active .blue {
+  background-color: rgb(62, 150, 62);
+}
+.french-flag:active .french-red {
+  background-color: orange;
+}
